@@ -1,5 +1,5 @@
 class ball{
-      constructor(x,y, vx,vy){
+    constructor(x,y, vx,vy){
       this.x=x;
       this.y=y;
       this.vx = vx;
@@ -7,7 +7,7 @@ class ball{
       this.fs =  ['#F0202060','#20F02060','#2020F060'][Math.floor(3*Math.random())];
       let canvas = document.querySelector('canvas');
       this.ctx = canvas.getContext('2d');
-      }
+    }
     drawspot(fs){
        this.ctx.fillStyle = fs; 
        this.ctx.beginPath();       
