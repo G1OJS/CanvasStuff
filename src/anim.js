@@ -32,14 +32,13 @@ class ball{
 
 }
 document.querySelector('canvas').addEventListener('click',function(){
-let balls = []
-for(let i=0; i<50; i++){
-  let a = new ball(80,80,
-  3*Math.random(),
-  3*Math.random());
-  balls.push(a);
-  setInterval(() => balls[i].dostep(), 10);
-};
-
+    let balls = []
+    for(let i=0; i<50; i++){
+        let a = new ball(80,80,
+        3*Math.random(),
+        3*Math.random());
+        balls.push(a);
+        setInterval(() => balls[i].dostep(), 10);
+    };
 });
       
